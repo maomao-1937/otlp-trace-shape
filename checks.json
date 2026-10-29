@@ -1,0 +1,82 @@
+[
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/clean.json",
+      "--json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/partial.json",
+      "--json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/duplicate.json",
+      "--json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/cycle.json",
+      "--json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/reversed-time.json",
+      "--json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/empty.json",
+      "--json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/invalid-id.json",
+      "--json"
+    ],
+    "exit": 2
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/flat-unsupported.json",
+      "--json"
+    ],
+    "exit": 2
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "examples/partial.json",
+      "--require-parents",
+      "--json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "otlp_trace_shape.py",
+      "--help"
+    ],
+    "exit": 0
+  }
+]
